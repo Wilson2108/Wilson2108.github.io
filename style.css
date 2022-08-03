@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: #062124;
+    color: #fff;
+    font-family: 'Arboria-Medium', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/*NAVS*/
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 60px;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*SHOWCASE*/
+
+hr{
+    margin: 20px 0;
+}
+.showcase{
+    width: 100%;
+    background: url('./Gallery/IMG_8247.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.showcase p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #062124;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+/* CARDS */
+
+.cards-uno{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.cards-uno img{
+    width: 80%;
+    height: 70%;
+}
+
+.cards-uno h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.cards-uno a{
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cards-uno a:hover{
+    text-decoration: underline;
+}
+
+.down-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 10px;
+}
+
+.down-cards img{
+    width: 60%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.down-cards h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.down-cards p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.down-cards-img{
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer{
+    margin: 50px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.foo-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foo-links a i{
+    font-size: 3rem;
+}
