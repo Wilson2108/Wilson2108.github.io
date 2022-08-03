@@ -45,7 +45,7 @@ body {
 }
 .logo {
     width: 100%;
-    background: url('./Gallery/trebolK.png') no-repeat center center/cover;
+    background: url('./trebolK.png') no-repeat center center/cover;
     padding-bottom: 50px;
     margin-bottom: 10px;
     height: 550px;
