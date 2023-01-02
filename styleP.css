@@ -5,65 +5,84 @@ body{
     text-align: justify;
 }
 
-.card-container
-{
-    font-family: 'Arboria-Medium', sans-serif;
-    font-size: 120px;
-    font-weight: bold;
-    width: 400px;
-    height: 250px;
-    margin: 80px auto;
-    border-radius: 10px;
-    perspective: 1400px;
-}
-
-.card
-{
-    display: grid;
-    grid-template-columns:auto;
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px; /*Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
     position: relative;
-    height: 100%;
-    border-radius: 10px;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-
-.front,
-.back
-{
-    display: flex;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-}
-
-.front
-{
-    color: #fff;
-    background: #C19652;
-}
-
-.back
-{
-    position: absolute;
-    top: 0;
-    left: 0;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
     transform: rotateY(180deg);
-    color: #C19652;
-    background: #fff;
+  }
+
+  .grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: lightgreen; */
+    padding: 20px;
+    /*border: 1px solid black;*/
 }
+ 
+.caja{
+    width: 150px;
+    height: 150px;
+    /*border: 4px solid black;*/
+    /*background-color: lightblue; */
+    margin: 15px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 10%;
+}
+
 
 .buttonback {
     background-color: #C19652; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
-    position: absolute;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
