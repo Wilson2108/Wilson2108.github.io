@@ -1,6 +1,8 @@
-body
-{
+body{
     background: #062124;
+    color: #fff;
+    font-family: 'Arboria-Medium', sans-serif;
+    text-align: justify;
 }
 
 .card-container
@@ -52,4 +54,16 @@ body
     transform: rotateY(180deg);
     color: #C19652;
     background: #fff;
+}
+
+.buttonback {
+    background-color: #C19652; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
