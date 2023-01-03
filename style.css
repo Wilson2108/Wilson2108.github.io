@@ -89,6 +89,7 @@ hr{
     font-size: 15px;
     border: 1px solid #fff;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .btn:hover{
@@ -151,6 +152,7 @@ hr{
 
 .down-cards-img{
     text-align: center;
+    border-radius: 20px;
 }
 
 /* FOOTER */
